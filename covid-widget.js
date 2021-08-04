@@ -125,7 +125,7 @@ var CoronaWidget = (function () {
         // _initUI associates Widget members with HTML DOM structure elements. 
         this._initUI();
         this.__initCountry().then((countryCode) => {
-            flag = '<img class="flag-img" src="./flags/' + countryCode.toLowerCase() + '.svg" alt="' + countryList[countryCode] + '">';
+            flag = '<img class="flag-img" src="https://covid-19.dataflowkit.com/assets/widget/flags/' + countryCode.toLowerCase() + '.svg" alt="' + countryList[countryCode] + '">';
             this.ui.country.innerHTML = flag + '&nbsp' + countryList[countryCode];
             this.country = countryList[countryCode];
             this._updateData();
